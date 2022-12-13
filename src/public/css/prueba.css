@@ -1,0 +1,521 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin-left: 80px;
+    margin-top: 80px;
+    background: #FFFBE0;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #FFFBE0;
+    border-bottom: 1.5px solid #FF8E51;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
+.container__header{
+
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+
+}
+
+header.logo{
+
+    height: 100%;
+    width: 150px;
+    
+}
+
+
+.container__nav{
+    position: relative;
+    height: 100%;
+    margin-left: 450px;
+    margin-top: 10px;
+
+}
+
+nav{
+    height: 100%;
+}
+
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav ul li{
+    margin: 0px 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #373737;
+    font-size: 14px;
+  
+
+}
+
+.select{
+    background: #DB7FFF;
+    padding: 10px 30px;
+    color: black;
+    border-radius: 20px;
+    text-decoration-style: none;
+    
+    
+}
+
+.icon__menu{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+}
+
+.icon__menu i{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.menu__side{
+    width: 80px;
+    height: 100%;
+    background: #8ED86B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #8ED86B;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menu__side::-webkit-scrollbar{
+    display: none;
+}
+
+.name__page{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name__page i{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.options__menu{
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+}
+
+.options__menu a{
+    color: #404040;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+.options__menu a:hover{
+    color: rgb(150, 150, 150);
+}
+
+.options__menu .option{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.options__menu .option i{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h4{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+a.selected{
+    color: #fff;
+}
+
+.selected:before{
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+/*Clases para usar en JavaScript*/
+
+.body_move{
+    margin-left: 250px;
+}
+
+.menu__side_move{
+    width: 250px;
+}
+
+
+.botonLogout{
+    width: 700;
+    height: 28;
+    background-color:#00c853;
+    border: #00c853;
+    border-radius: 8px;
+    margin-left: 750px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
+
+
+
+/*Diseño de botones del contenedor principal*/
+
+.contiene__botones{
+
+    max-width: 1200px;
+    height: 100%;
+   /* justify-content: space-between;*/
+    padding: 0px 20px;
+    align-items: center;
+    margin-top: 270px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+ul, cl{
+
+list-style: none;
+
+
+}
+
+
+
+
+/*Diseño de los botones de los submódulos*/
+.pienivel{
+    text-align: center;
+    background: #DB7FFF;
+    padding: 10px 30px;
+    color: black;
+    border-radius: 0px;
+    height: 40px;
+    width: 200px;
+    font-family: 'Poppins',  sans-serif;
+    
+
+}
+
+div.contenedor_esp{
+
+    margin-left: 290px;
+    margin-top: 140px;
+
+    
+}
+
+div.niveles{
+margin: 10px 20px;
+box-shadow: 0 4px 8px 0 lightskyblue, 0  4px 20px 0 rgb(0,0,0,0.19);
+float: left;
+width: 200px;
+
+}
+
+.animarimg2{
+    align-items: center;
+    border: 1px solid #FFFBE0;
+    transform: rotate(-5deg);
+    margin-right: 30px;   
+ }
+
+.texto1{
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 2;
+    color:#53379A;
+}
+
+/* Dimensiones de las imagenes de los niveles*/
+div.niveles img{
+
+    width: 200px;
+    height: 200px;
+}
+
+div.niveles:hover{
+   border: 1px solid lightcoral;
+   transform: rotate(-3deg);
+
+
+}
+
+div.pienivel{
+   
+   text-align: center;
+   padding: 10px;
+
+}
+
+
+.bsubmodulos{
+    align-items: center;
+    display: block;
+    margin-left: 325px;
+    margin-top: 20px;
+    justify-content: center;
+
+}
+
+.bsubmodulos2{
+    align-items: center;
+    display: block;
+    margin-left: 425px;
+    margin-top: 20px;
+    justify-content: center;
+
+}
+
+
+/*ESTILOS DEL LOGIN*/
+
+.form-login {
+    width: 400px;
+    height: 530px;
+    background: #9bdb9f;
+    margin: auto;
+    margin-top: 140px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #FFFBE0;
+    color: #2f2e2e;
+  }
+  
+  .form-login h5 {
+    font-family: 'Lucida Handwriting';
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    border: 1px solid ;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #9bdb9f;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    background: #DB7FFF;
+    padding: 10px 30px;
+    border: 1px solid ;
+    color: black;
+    border-radius: 20px;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-block-end: 10px;
+    text-align: center;
+    list-style: none;
+    
+  }
+
+  div.buttons{
+
+    align-items: center;
+    
+
+  }
+  
+  .form-login p{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  
+  .form-login a {
+    color: #2f2e2e;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .form-login a:hover {
+    text-decoration: underline;
+  }
+
+
+  /**ESTILO DE LA VENTANA DE BIENVENIDA*/
+
+  div.anim:hover{
+    align-items: center;
+    border: 1px solid #FFFBE0;
+    transform: rotate(-5deg);
+ }
+
+ /**--------------------------------*/
+
+ /* Estilos del contenido del submódulo abecedario*/
+
+.boton {
+    border: 1px solid #DB7FFF; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #DB7FFF; /*color botón*/
+    color: #2f2e2e; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    font: condensed bold 110% sans-serif; /*tipografía texto*/
+    border-radius: 10px; /*bordes redondos*/
+    margin-left:0px; /*Alineación del botón a la izquierda*/
+    margin-top: 10px;
+    width: 100%;
+    }
+.boton2{/*Botón de los títulos de cada uno de los módulos*/
+    border: 1px solid #946dc8; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #b29fee; /*color botón*/
+    color: #2f2e2e; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    font: condensed bold 110% sans-serif; /*tipografía texto*/
+    border-radius: 10px; /*bordes redondos*/
+    margin-left:0px; /*Alineación del botón a la izquierda*/
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+   .botoncito{
+    border: 1px solid #DB7FFF; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #DB7FFF; /*color botón*/
+    color: #2f2e2e; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    font: condensed bold 110% sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    margin-left:700px; /*Alineación del botón a la izquierda*/
+    margin-top: 10px;
+
+   }
+
+   .elementos_abecedario{
+    justify-content: center;
+    margin-left: 100px;
+
+   }
+
+   .imagenabc{
+
+     width: 250px; 
+     height: 250px;
+
+   }
+
+   .letras{
+     margin-left: 20px;
+     margin-top: 20px;
+     box-shadow: 0 4px 8px 0 lightskyblue, 0  4px 20px 0 rgb(0,0,0,0.19);
+     float: left;
+     width: 250px;
+   }
+
+   audio{
+     width: 250px;
+     height: 30px;
+     margin-top: 30px;
+     border:3px solid rgba(115, 41, 234, 0.401);
+       border-radius: 10px;
+
+   }
+
+   audio:hover, audio:focus, audio:active
+{
+-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+transform: scale(1.05);
+}
+
+
+audio
+{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 2px 2px 4px 0px #006773;
+-webkit-box-shadow:  2px 2px 4px 0px #006773;
+box-shadow: 2px 2px 4px 0px #006773;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:7px 7px 7px 7px ;
+}
+
+
+   /*----------------------------------------------------------*/
+
+@media screen and (max-width: 760px){
+    .body_move{
+        margin-left: 0px;
+    }
+
+    .menu__side_move{
+        width: 80px;
+        left: -80px;
+    }
+}

@@ -1,0 +1,65 @@
+.imagenvocal{
+
+    width: 600px; 
+    height: 400px;
+    margin-left: 190px;
+    margin-top: 30px;
+    margin-block-end: 20px;
+
+  }
+
+  .videosabc{
+
+    margin-left: 190px;
+    margin-top: 30px;
+    margin-block-end: 20px;
+
+
+  }
+
+  iframe{
+    width: 600px; 
+    height: 400px;
+
+
+  }
+
+  .botonNiveles{
+    width: 100px;
+    height: 40px;
+    background-color:#c800bb59;
+    border: #00c853;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: medium;
+    font:bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 10px; /*espacio alrededor texto*/
+    
+
+  }
+ .nav-item{
+  background: #e2caeb;
+    padding: 10px 30px;
+    color: black;
+    font:bold;
+    border-radius: 30px;
+    border: 2px solid grey; 
+    text-decoration-style: none;
+    margin-left: 5px;
+   
+ }
+
+.nav-item .a{
+  color: black; 
+  width: 70px;
+    height: 40px;
+
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun-learning</title>
+    
+    <!--Usando materialize-->
+     <!--Import Google Icon Font-->
+  
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    
+    <!-- se quitó el css ya que la vista se hacía feita
+    <link rel="stylesheet" href="\src\public\assets\css\prueba.css">-->
+
+    <script src="https://kit.fontawesome.com/512f6708d8.js" crossorigin="anonymous"></script>
+     
+</head>
+
+<body >
+    
+    <!-- Menú de navegación -->
+  <nav class="light-green lighten-2" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">
+        <!-- Insercción del logo -->
+        <img src="\src\public\img\icons\iconofunlearn.svg" alt="" style="margin-top: 20px;">
+        
+      </a>
+
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <!--  -->
+      <!--  -->
+      <ul class="right hide-on-med-and-down">
+      <li><a href="\src\views\registro-login\ventanaLogin.html" class="btn purple lighten-4 white-text waves-effect-pink-grey  lighten-1">Registrarse / iniciar sesion</a></li>
+
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#" class="btn whithe lighten-4 purple-text waves-effect-pink-grey lighten-1">Login</a></li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+     <!-- Slider -->
+
+     <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-responsive"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>Fun Learning-Conoce tu idioma...</h3>
+            <h5 class="light grey-text text-lighten-3">Fun learning es tu curso y espacio de trabajo en donde 
+              tu hija o hijo pueden tener una herramienta y acompañamiento en sus primeros pasos de aprendizaje de su lengua materna.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://images.pexels.com/photos/159579/crayons-coloring-book-coloring-book-159579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"> <!-- random image -->
+          <div class="caption left-align">
+            <h3>Aprende a leer</h3>
+            <h5 class="light grey-text text-lighten-3">Es un módulo que donde ofrecemos contenido visual y de audio para que sea más fácil para la niña o el niño, aprender a leer, a conocer el abecedario y </h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://images.pexels.com/photos/998067/pexels-photo-998067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"> <!-- random image -->
+          <div class="caption right-align">
+            <h3>Right Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://images.pexels.com/photos/11286173/pexels-photo-11286173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+        
+   
+
+    <div class="anim">
+        <img src="\src\public\img\images\Bienve.png" alt="">
+      </div>
+
+
+  <!--  Scripts-->
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems);
+   
+  });
+
+
+ </script>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="\src\public\assets\js\script.js"></script>
+    
+</body>
+</html>

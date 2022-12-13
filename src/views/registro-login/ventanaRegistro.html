@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión</title>
+  
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+<link rel="stylesheet" type="text/css" href="\src\public\css\prueba.css">
+<link rel="stylesheet" type="text/css" href="\src\public\css\login.css">
+
+
+</head>
+<body  class="bodyLogin" >
+
+   
+    <div class="container" align="center" style="height: 300px; width: 500px; margin-top: 10px;">
+
+        <div class="row">
+           <div class="col s12 m12 14 offset-1 loginDiv">
+                <div class="row loginContainer">
+                  <div class="col s12 m12 14">
+
+                    <div class="col s12" align="center">
+                        <img src="\src\public\img\icons\logofunlearn.png" alt=""
+                         class="responsive-img" >
+                        
+                         <h4 style="text-align: center; font-style:italic; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(105, 97, 113); ">Bienvenido</h4>
+
+                        <br>
+
+                    </div>
+
+                    <div class="col s12 m10 14 offset-l1">
+                        
+                       <!--Foemulario de registro-->
+                        
+                        <div class="row">
+                            <form class="col s12">
+                              <div class="row">
+
+                                <div class="input-field col s12 " >
+                                    <i class="material-icons prefix">account_circle</i>
+  
+                                    <input class=" validate" id="user" type="text" name="Usuario" 
+                                    placeholder="Nombre" autocomplete="off">
+                                    
+                                </div>
+
+                                <div class="input-field col s12 " >
+                                    <i class="material-icons prefix">account_circle</i>
+  
+                                    <input class=" validate" id="user" type="text" name="Usuario" 
+                                    placeholder="Apellido paterno" autocomplete="off">
+                                    
+                                  </div>
+
+                                  <div class="input-field col s12 " >
+                                    <i class="material-icons prefix">account_circle</i>
+  
+                                    <input class="validate" id="user" type="text" name="Usuario" 
+                                    placeholder="Apellido materno" autocomplete="off">
+                                    
+                                  </div>
+
+
+
+
+                                <div class="input-field col s12 " >
+                                  <i class="material-icons prefix">account_circle</i>
+
+                                  <input class="validate" id="user" type="text" name="Usuario" 
+                                  placeholder="Nombre de suario" autocomplete="off">
+                                  
+                                </div>
+
+                                <div class="input-field col s12" >
+                                    <i class="material-icons prefix">account_circle</i>
+  
+                                    <input class=" validate" id="user" type="text" name="Usuario" 
+                                    placeholder="Correo electrónico" autocomplete="off">
+                                    
+                                  </div>
+
+                                <div class="input-field col s12 ">
+                                  <i class="material-icons prefix">vpn_key</i>
+                                  <input class="validate " id="password" type="password" name="Contraseña" 
+                                  placeholder="Contraseña" autocomplete="off">
+                                </div>
+
+                                <div class="input-field col s12 ">
+                                    <i class="material-icons prefix">vpn_key</i>
+                                    <input class="validate " id="password" type="password" name="Contraseña" 
+                                    placeholder="Confirmar contraseña" autocomplete="off">
+                                  </div>
+
+                              
+                              <div class="input-field col s12 ">
+                              <button class="btn com l12 s12 m12 botonlog black-text" ><!--No pude hacer que me mande al formulario de registro :c-->
+                                    Regístrarme
+                                </button>
+                              </div>
+
+                          </div>
+                          </div>
+                            </form>
+                          </div>
+                                
+                        
+
+
+                    </div>
+                     
+
+                 
+                </div>
+
+                </div>
+
+           </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+<!--Para usar Java script-->
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.autocomplete');
+    var instances = M.Autocomplete.init(elems, options);
+  });
+
+
+
+</script>
+
+
+ <!--  Scripts-->
+ <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ <script src="js/materialize.js"></script>
+ <script src="js/init.js"></script>
+    
+</body>
+</html>

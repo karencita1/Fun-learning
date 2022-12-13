@@ -1,0 +1,261 @@
+*{
+
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+body{
+  min-height: 100vh;
+
+}
+a{
+  text-decoration: none;
+
+}
+li{
+   list-style:none;
+
+}
+h1,h2{
+   color: #444;
+}
+
+/*diseño del menú*/
+
+.menu-admin{
+   position: fixed;
+   background: #e9dff8;
+ 
+   width: 20vw;
+   min-height: 100vh;
+}
+
+.menu-admin .menu-name{
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+
+}
+
+.menu-admin li{
+    font-size: 24px;
+    padding: 10px 40px;
+    color:#444;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.menu-admin li:hover{
+
+  background: white;
+  color: black;
+}
+
+
+
+
+/* Diseño de header*/
+.container{
+ position: absolute;
+ right: 0;
+ width: 80vw;
+ height: auto;
+ background: #eeedf2;
+
+}
+
+.container .header{
+position: fixed;
+top: 0;
+right: 0;
+width: 80vw;
+height: 10vh;
+background: #b589f7;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .header .nav{
+width: 90%;
+display: flex;
+align-items: center;
+
+
+}
+
+.container .header .nav .buscar{
+  flex: 3;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+
+/*Boton de cerrar sesión (salir)*/
+.salir{
+  border-radius: 30px;
+  background: #e2bbe9;
+  color: #2f2e2e;
+ 
+ 
+ }
+
+.container .header .nav .user{
+flex: 1;
+
+
+
+}
+
+
+/*Diseño del contenido*/
+
+.boton2{/*Botón de los títulos de cada uno de los módulos*/
+  border: 1px solid #946dc8; /*anchura, estilo y color borde*/
+  padding: 10px; /*espacio alrededor texto*/
+  background-color: #ae9cdf; /*color botón*/
+  color: #2f2e2e; /*color texto*/
+  text-decoration: none; /*decoración texto*/
+  font: condensed bold 110% sans-serif; /*tipografía texto*/
+  border-radius: 10px; /*bordes redondos*/
+  margin-left:0px; /*Alineación del botón a la izquierda*/
+  margin-top: 10px;
+  width: 100%;
+
+}
+
+
+/* Dimensiones de las imagenes de los niveles*/
+
+
+div.contenedor_esp{
+
+align-items: center;
+  
+}
+div.niveles{
+  margin: 10px 20px;
+  box-shadow: 0 4px 8px 0 lightskyblue, 0  4px 20px 0 rgb(0,0,0,0.19);
+  float: left;
+  width: 200px;
+  
+  }
+
+div.niveles img{
+
+  width: 200px;
+  height: 200px;
+}
+
+div.niveles:hover{
+ border: 1px solid lightcoral;
+
+
+}
+
+div.pienivel{
+ 
+ text-align: center;
+ padding: 10px;
+
+}
+
+/*Diseño de la tabla*/
+table{
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 400px;
+  height: auto;
+}
+
+th, td{
+    padding: 13px;
+}
+
+thead{
+    background-color: #a682df;
+    border-bottom: solid 5px #c9a0d0;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+tr:hover td{
+    background-color: #9146b1;
+    color: white;
+}
+
+
+::placeholder { color: rgb(92, 90, 90); }
+
+
+
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 input#search{
+  width: 300px;
+  height: 50px;
+  background: #c9c4cb;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-transition: background .55s ease;
+-moz-transition: background .55s ease;
+-ms-transition: background .55s ease;
+-o-transition: background .55s ease;
+transition: background .55s ease;
+}
+.container-1 input#search::-webkit-input-placeholder {
+  color: #65737e;
+}
+
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+  color: #65737e;  
+}
+
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+  color: #65737e;  
+}
+
+.container-1 input#search:-ms-input-placeholder {  
+  color: #65737e;  
+}
+
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+  outline:none;
+  background: #f9dede;
+}
+

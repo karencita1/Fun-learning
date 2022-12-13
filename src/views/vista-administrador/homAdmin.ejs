@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="#">
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Administrador</title>
+
+    <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--CSS -->
+ 
+     
+     <link rel="stylesheet" type="text/css" href="css/vistadmin.css">
+
+     
+    <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+</head>
+
+<STYLE>a {text-decoration: none;} </STYLE>
+<body class="responsive">
+    
+    <div class="menu-admin responsive">
+
+        <div class="menu-name responsive">
+            <div class="logo">
+                <img src="img/icons/iconofunlearn.svg" class="img-responsive" alt="">
+              </div>
+        </div>
+        <ul>
+            <li>
+                <div class="icon_menu">
+                    <i class="fa-sharp fa-solid fa-house"></i>
+                   
+                 </div>
+                &nbsp; Mi inicio</li>
+
+                <li>
+                  <div class="icon_menu">
+                    <i class="material-icons">manage_accounts</i>
+                     
+                   </div>
+                  &nbsp; Mi perfil</li>
+            
+                <li>
+                    <div class="icon_menu">
+                      <i class="material-icons">view_module</i>
+                       
+                     </div>
+                    &nbsp; Modulos</li>
+            
+                    <li>
+                        <div class="icon_menu">
+                          <i class="material-icons">group</i>
+                           
+                         </div>
+                        &nbsp; Usuarios</li>
+        </ul>
+
+
+
+    </div>
+
+
+    <div class="container">
+    
+       <div class="header">
+           <div class="nav">
+               
+             <div class="row">
+                 <div class="col s12 l12">
+
+                  <div class="user" style="margin-left: 600px; margin-top: 20px;">
+                   
+                    <a href="#" class="btn salir">salir</a>
+  
+                  </div>
+  
+
+
+
+                  
+                 </div>
+
+
+
+             </div>
+
+               
+            </div>
+
+        </div>
+        
+
+        <!--Dividir contenido-->
+        <div class="tablas" style="margin-top: 90px;" align="center">
+          <div class="row">
+            <div class="col s12">
+
+
+              <h5 class="center-align">Configuración de Usuarios</h5>
+
+            </div>
+            
+            <div class="col s6 ">
+              <br>
+             
+              <div class="center-align" style="background: white; border-radius: 30px;" >
+                <br>
+                <h5 class="center-align">Agregar nuevo estudiante</h5>
+                
+              <div style="margin-left: 20px;"> <!--Div para alinear los componentes -->
+
+
+
+<form action="/administrador/creatEstudiante" method="post" id="formEstudiante">
+                        <!--Formulario de registro-->
+                         <div class="row">
+                            <div class="col s12">
+                                <div class="row">
+
+                                  <div class="input-field col s11" style="margin-top: 2px;">
+                                    <i class="material-icons prefix">face</i>
+  
+                                    <input class=" validate" id="user" type="text" name="user" 
+                                    placeholder="Nombre" autocomplete="off">
+                                    
+                                  </div>
+
+                                  <div class="input-field col s10" style="margin-top: 2px; margin-left: 35px;">
+                          
+                                    <input class=" validate" id="apellidopaterno" type="text" name="apellidopaterno" 
+                                    placeholder="Apellido paterno" autocomplete="off">
+                                    
+                                  </div>
+
+                                  <div class="input-field col s10" style="margin-top: 2px; margin-left: 35px;">
+
+                                    <input class=" validate" id="apellidomaterno" type="text" name="apellidomaterno" 
+                                    placeholder="Apellido materno" autocomplete="off" >
+                                    
+                                  </div>
+
+                                
+
+                                  <div class="input-field col s11" style="margin-top: 2px;">
+                                    <i class="material-icons prefix">email</i>
+  
+                                    <input class=" validate" id="correo" type="text" name="correo" 
+                                    placeholder="Correo electrónico" autocomplete="off">
+                                    
+                                  </div>
+
+                                  <div class="input-field col s11" style="margin-top: 2px;">
+                                    <i class="material-icons prefix">vpn_key</i>
+  
+                                    <input class=" validate" id="contrasena" type="text" name="contrasena" 
+                                    placeholder="Contraseña" autocomplete="off">
+                                    
+                                  </div>
+
+                                  <div class="input-field col s10" style="margin-top: 2px; margin-left: 35px;" >
+                                    <select id="rol" name="rol">
+                                      <option value="2">Estudiante</option>
+
+                                      <option value="1">Administrador</option>
+                                      
+                                    </select>
+                                    <label>Tipo de usuario</label>
+                                  </div>
+
+                                  <div class="input-field col s12 ">
+                                    
+                                    <button class="btn com l12 s12 m12 botonlog black-text">
+                                        Crear 
+                                    </button>
+                                  </div>
+
+                                  
+                                  
+                                  
+                                </form>
+
+                                <form action="" method="post" id="formEstudiant">
+                                  <div class="input-field col s12 ">
+                                  
+                                    <button class="btn com l12 s12 m12 botonlog black-text">
+                                        Guardar cambios
+                                    </button>
+                                  </div>
+                                
+                                </form>
+
+
+
+                                </div>
+
+
+
+                            </div>
+
+
+                         </div>
+
+
+                
+                 
+                </div>
+              
+              </div>
+
+            </div>
+
+            <!--Botones para agregar, eliminar y editar-->
+           
+            <div class="col s1">
+
+                 <div class="">
+                   <!--botón de agregar-->
+                    <div >
+                        <div class="row" >
+
+                          <div class="col s12 l12" >
+                            <a class="waves-effect  btn pulse" style="margin-top: 50px; margin-right: 2px; border-radius: 100px;">
+                            <i class="material-icons">person_add_alt</i>
+                             </a>
+
+                          </div>
+                        </div>
+                    </div>
+                    <!--botón de editar-->
+                    <div >
+                      <div class="row" >
+
+                        <div class="col s12 l12" >
+                          <a class="waves-effect waves-light btn pulse" style="margin-top: 10px; margin-right: 2px; border-radius: 100px;">
+                          <i class="material-icons">create</i>
+                           </a>
+
+                        </div>
+                      </div>
+                  </div>
+
+                  <!--botón de eliminar-->
+                  <div >
+                    <div class="row" >
+
+                      <div class="col s12 l12" >
+                        <a class="waves-effect waves-light btn pulse" style="margin-top: 10px; margin-right: 2px; border-radius: 100px;">
+
+                          
+                        <i class="material-icons">delete</i>
+                         </a>
+
+                      </div>
+                    </div>
+                </div>
+
+                    
+                 </div>
+
+
+
+            </div>
+          </form>
+            <!--Finaliza el diseño del CRUD-->
+
+            <!--Menu lateral izquierdo-->
+
+            <div class="col s5 m5">
+              <br>
+              <div class="crud" style="background: white;">
+                <ul class="collapsible">
+                  <li>
+                    <div class="collapsible-header">
+                      <i class="material-icons">manage_accounts</i>
+                      Administrador
+                      <span class="new badge">4</span></div>
+                    <div class="collapsible-body">
+                         
+                      <!--Información de usuario administrador actual-->
+
+                      <div>
+                         <div class="row">
+                           <div class="col s12 m12">
+                              <div class="row">
+                                   <div class="col s3 m3">
+                                    <img src="https://images.pexels.com/photos/1821095/pexels-photo-1821095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                                    
+                                   </div>
+
+                                   <div class="col s9 m9">
+                                      
+                                    <div class="card purple lighten-5">
+                                      <div class="card-content black-text">
+                                        <span class="card-title">Karen José</span>
+                                        <p></p>
+                                      </div>
+                                      <div class="card-action">
+                                        <a href="#" style="color: gray;">Ir a mi perfil</a>
+                                      </div>
+                                    </div>
+
+                                   </div>
+
+                              </div>
+
+                           </div>
+
+                         </div>
+
+
+
+
+
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header">
+                      <i class="material-icons">event</i>
+                      Agenda
+                      <span class="badge">1</span></div>
+                    <div class="collapsible-body">
+                      <iframe src="https://calendar.google.com/calendar/embed?height=250&wkst=1&bgcolor=%23ffffff&ctz=America%2FMexico_City&mode=AGENDA&showTz=0&showPrint=0&showTitle=1&title=Agenda&showCalendars=1&src=MTkxNjEzMTBAaXRvYXhhY2EuZWR1Lm14&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMubWV4aWNhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5&color=%2333B679&color=%230B8043" 
+                      style="border:solid 1px #777" width="300" height="250" frameborder="0" 
+                      scrolling="no"></iframe>
+                    </div>
+                  </li>
+
+
+
+
+                </ul>
+              </div>
+              <br>
+
+             <div>
+              
+              <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23B39DDB&ctz=America%2FMexico_City&mode=MONTH&src=MTkxNjEzMTBAaXRvYXhhY2EuZWR1Lm14&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMubWV4aWNhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5&color=%2333B679&color=%230B8043"
+               style="border:solid 1px #777" width="350" height="300" frameborder="0" scrolling="no"></iframe>
+
+
+
+
+
+             </div>
+
+
+
+
+
+
+            
+            </div>
+            
+          </div>
+
+          
+        </div>
+        
+              
+
+
+        <!--Contenido-->
+        <!--Aquí es una tabla para visualizar a los usuarios registrados-->
+
+        <div class="row"></div>
+          
+        <div class="col s12">
+          <h5 class="center-align">Visualizar información de usuarios</h5>
+
+        </div>
+
+        <div class="row">
+        
+        <div class="col s12">
+        <div class="contenido" style="margin-top: 10px;">
+      
+          <div class="crud" style="background: white;">
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">face</i>
+                  <!--Título-->
+
+                  Usuarios estudiantes
+                  <span class="new badge">1</span></div>
+                <div class="collapsible-body">
+                  <p>Usuarios estudiantes</p>
+                  <br>
+
+                  <div class="row">
+                    <div class="col s12">
+                       <div class="row">
+                        <div class="col s8">
+                           <!--Barar de buscador-->
+                            
+                           <div class="box">
+                            <div class="container-1">
+                                <span class="icon"><i class="fa fa-search"></i></span>
+                                <input type="search" id="search" placeholder="Search..." />
+                            </div>
+                           </div>
+
+
+                          </div>
+                       </div>
+
+                    </div>
+
+
+                  </div>
+
+                
+                 <!--Inicia el contenido en una tabla-->
+                 <div class="tablaEstudiante center-align">
+
+                  <div class="row">
+                     <div class="col c12">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Apellido-paterno</th>
+                            <th>Apellido-materno</th>
+                            <th>ACTIONS</th>
+                          </tr>
+                        </thead>
+                        <tbody id="data" ></tbody>
+                        
+
+                       
+                      </table>
+
+
+
+
+
+
+
+                     </div>
+
+
+
+
+
+                </div>
+
+
+              </div>
+              
+                
+                
+                
+                
+                
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">manage_accounts</i>
+                  Usuarios administradores
+                  <span class="badge">1</span></div>
+                <div class="collapsible-body">
+                
+                  <!--Inicia el contenido en una tabla-->
+                  <div class="tablaEstudiante center-align">
+
+                    <div class="row">
+                       <div class="col c12">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>id_usuario</th>
+                              <th>Nombre Usuario</th>
+                              <th>Correo</th>
+                              <th>Tipo de usuario</th>
+                            </tr>
+                          </thead>
+                    
+                          <tr>
+                            <td>01</td>
+                            <td>KarenMD1</td>
+                            <td>19161310@itoaxaca.edu.mx</td>                            
+                            <td>Administrador</td>
+                          </tr>
+  
+                         
+                        </table>
+  
+  
+  
+  
+  
+  
+  
+                       </div>
+  
+  
+  
+  
+  
+                  </div>
+  
+  
+                </div>
+                
+                
+                
+                
+                
+                
+                </div>
+              </li>
+            </ul>
+          </div>
+             
+         </div>
+
+
+        </div>
+        </div>
+      </div>
+    
+
+
+
+       
+    </div>
+
+    
+       
+       
+    
+    <script src="js/http.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/validarEstudiante.js"></script>
+
+    
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <% if(typeof alert!="undefined" ){%>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle %>',
+                text: '<%= alertMessage %>',
+                icon: '<%= alertIcon%>',
+            }).then((result) => {
+                window.location = '<%= ruta%>';
+            })
+        </script>
+        <%}%>
+
+    
+    <!--Para usar Java script-->
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+       });
+
+       document.addEventListener('DOMContentLoaded', function() {
+       var elems = document.querySelectorAll('.autocomplete');
+        var instances = M.Autocomplete.init(elems);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+
+
+    </script>
+      <!-- Compiled and minified JavaScript -->
+      <script type="text/javascript" src="js/calendario.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="https://kit.fontawesome.com/512f6708d8.js" crossorigin="anonymous"></script>
+      <!--Script para el menú-->
+      <script src="j/\script.js"></script>
+
+
+</body>
+</html>
